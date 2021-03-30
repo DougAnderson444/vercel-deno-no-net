@@ -406,7 +406,7 @@ export async function startDevServer({
 	}
 
 	args.push(
-		'--allow-all',
+		'--allow-net=deno.land --allow-env --allow-read',
 		join(__dirname, 'dev-server.ts')
 	);
 
